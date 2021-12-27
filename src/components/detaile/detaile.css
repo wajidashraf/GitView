@@ -1,0 +1,200 @@
+a {
+  text-decoration: none;
+  color: #2b2b2c;
+}
+
+.detaile {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1rem;
+}
+.actions_btn {
+  margin-bottom: 2rem;
+}
+.back:hover {
+  background-color: brown;
+}
+
+.pills {
+  color: #fff;
+  padding: 2px 0.5rem;
+  background: #464545;
+}
+.profileBtn {
+  padding: 0.2rem 2rem;
+  margin: 2rem 0;
+}
+
+.user_info {
+  position: relative;
+}
+
+.hire:hover {
+  background: #4d75c0;
+}
+.disable {
+  background: #797878;
+  cursor: not-allowed;
+}
+.disable:hover {
+  background: #797878;
+  cursor: not-allowed;
+}
+.about_user {
+  display: flex;
+  justify-content: space-around;
+}
+.user_img_box {
+  max-width: 35%;
+  height: fit-content;
+}
+
+.user_img {
+  padding: 1rem;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 5px;
+  /* width: 100%; */
+}
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.user_info {
+  width: 65%;
+  padding: 1rem;
+  padding-top: 0;
+  /* border-left: 1px solid rgb(177, 177, 177); */
+  margin-left: 1rem;
+}
+h4 {
+  margin-bottom: 0px;
+}
+.bio {
+  margin-top: 4px;
+}
+.user_bio {
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+.user_bio::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 120px;
+  height: 4px;
+  background-color: brown;
+  border-radius: 50px;
+}
+.user_bio::after {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: brown;
+  border-radius: 50px;
+}
+
+.repos {
+  padding: 0.5rem;
+  border: 1px solid rgb(177, 177, 177);
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.user_repos {
+  margin-top: 2rem;
+}
+.user_repos h3 {
+  text-transform: uppercase;
+}
+.repos a {
+  color: #4d75c0;
+}
+.title h2{
+    margin-top: 0;
+}
+
+.pills span {
+  font-size: 11px;
+}
+.folow p {
+  text-transform: uppercase;
+  margin: 8px 0;
+  padding: 0.5rem;
+  border: 1px solid rgb(177, 177, 177);
+}
+.viewProfile,
+.hire {
+    margin: 0.4rem 0;
+    padding: 0.7rem 1rem;
+    width: 100%;
+}
+
+.repos {
+  position: relative;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.repos::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background: brown;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in 0.4s;
+  transform: scale(0);
+  transform-origin: left;
+}
+.repos:hover::before {
+  transform: scale(1);
+}
+@media (max-width: 900px) {
+  .viewProfile,
+  .hire {
+    margin: 0.4rem 0;
+    padding: 0.7rem 1rem;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  
+  .about_user {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .user_img_box {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .user_bio{
+      margin-top: 2rem;
+  }
+
+  .user_img {
+    padding: 1rem;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 50%;
+  }
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .user_info {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0;
+  }
+  .user_repos {
+    margin-top: 0rem;
+  }
+}

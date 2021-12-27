@@ -1,0 +1,9 @@
+.login{
+    max-width: 400px;
+    margin: 3rem auto;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+.login h1{
+    text-align: center;
+}
