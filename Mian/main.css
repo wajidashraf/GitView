@@ -1,0 +1,143 @@
+.main {
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: max-content;
+  grid-gap: 2rem 1.3rem;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 668px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.user_Card {
+  /* background: cadetblue; */
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #999;
+  position: relative;
+}
+.error {
+  background: rgb(243, 100, 100);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.user_Card h2 {
+  margin-bottom: 0;
+}
+.user_Card strong {
+  margin: 0.2rem 0 1rem;
+}
+.img {
+  width: 110px;
+  height: 110px;
+  background: #ededed;
+  border-radius: 50%;
+  outline-offset: 4px;
+  outline: auto;
+  outline-style: double;
+  outline-color: #6495ed;
+}
+.img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.action_Btn button {
+  margin: 0rem 0.5rem;
+}
+
+.search_container {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+.search_box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+/* @media (max-width: 668px) {
+    .search_box {
+        flex-direction: column;
+        padding: 1rem 8rem;
+    }
+    .search_btn{
+        margin-top: 1rem;
+    }
+    
+}
+@media (max-width: 600px) {
+    .search_box{
+        padding: 1rem 2rem;
+    } 
+ 
+} */
+.search_field {
+  border: 1px solid #333;
+  padding: 0.5rem;
+  font: 1.3rem bold;
+  width: -webkit-fill-available;
+  background-color: transparent;
+}
+.search_field:focus {
+  outline: none;
+  border: 2px solid #6495ed;
+  background-color: #fff;
+}
+.search_btn {
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: brown;
+  font: 1.3rem bold;
+  color: #fff;
+  width: -webkit-fill-available;
+  margin-top: 1rem;
+}
+
+
+.hide {
+  display: none;
+}
+.fa {
+  padding-left: 1rem;
+  margin-right: 5px;
+  vertical-align: bottom;
+  font-size: 2rem;
+}
+.fa-window-close {
+  color: brown;
+}
+.fa-check-square {
+  color: rgb(138 203 78);
+}
+.fa-arrow-circle-up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 3rem;
+  z-index: 99;
+  border-radius: 50%;
+  cursor: pointer;
+  color: brown;
+}
