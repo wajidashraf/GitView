@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Rubik:wght@300;400;500&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Permanent+Marker&family=Rubik:wght@300;400;500&family=Varela+Round&display=swap');
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(208, 212, 212);
+}
+.container {
+  max-width: 1280px;
+  min-height: 80vh;
+  padding: 1rem;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  text-transform: uppercase;
+}
+
+button {
+  /* box-shadow: 3px 3px rgb(58, 58, 58); */
+  background: brown;
+  min-width: 80px;
+  color: rgb(246, 246, 246);
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+ button:hover {
+  /* box-shadow: 0px 0px rgb(58, 58, 58); */
+  background: rgb(250, 48, 48);
+}
+
+
+
+.text-center {
+  text-align: center;
+}
+/* padding */
+.p {
+  padding: .5rem;
+}
+.p1 {
+  padding: 1rem;
+}
+.p2 {
+  padding: 1.5rem;
+}
+.p3 {
+  padding: 2rem;
+}
+.p4 {
+  padding: 3rem;
+}
+.p5 {
+  padding: 3.5rem;
+}
+.py1 {
+  padding: 1rem 0;
+}
+.py2 {
+  padding: 1.5r 0em;
+}
+.py3 {
+  padding: 2rem 0;
+}
+.py4 {
+  padding: 3rem 0;
+}
+.py5 {
+  padding: 3.5r 0em;
+}
+.px1 {
+  padding: 0 1rem;
+}
+.px2 {
+  padding: 0 1.5rem;
+}
+.px3 {
+  padding: 0 2rem;
+}
+.px4 {
+  padding: 0 3rem;
+}
+.px5 {
+  padding: 0 3.5rem;
+}
+.pb{
+  padding-bottom: 0rem;
+}
+.pb1{
+  padding-bottom: 1rem;
+}
+
+/* margin */
+.mb{
+  margin-bottom: 0.3rem;
+}
+.m1 {
+  margin: 1rem;
+}
+.m2 {
+  margin: 1.5rem;
+}
+.m3 {
+  margin: 2rem;
+}
+.m4 {
+  margin: 3rem;
+}
+.m5 {
+  margin: 3.5rem;
+}
